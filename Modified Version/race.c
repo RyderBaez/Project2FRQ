@@ -1,11 +1,10 @@
 #include "types.h"
 #include "stat.h"
 #include "user.h"
-#include <stdio.h>
 int main(){
     int pid = fork();
     if(pid < 0){
-        prinf(1, "Error forking first child.\n");
+        printf(1, "Error forking first child.\n");
     }
     else if (pid == 0){
         printf(1, "Child 1 Executing\n");
